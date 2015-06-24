@@ -1,0 +1,9 @@
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\PatreonScrubber.exe.config
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\PatreonScrubber.exe
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\PatreonScrubber.pdb
+K:\GitHub\PatreonScrubber\PatreonScrubber\obj\Debug\PatreonScrubber.csprojResolveAssemblyReference.cache
+K:\GitHub\PatreonScrubber\PatreonScrubber\obj\Debug\PatreonScrubber.exe
+K:\GitHub\PatreonScrubber\PatreonScrubber\obj\Debug\PatreonScrubber.pdb
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\HtmlAgilityPack.dll
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\HtmlAgilityPack.pdb
+K:\GitHub\PatreonScrubber\PatreonScrubber\bin\Debug\HtmlAgilityPack.xml
