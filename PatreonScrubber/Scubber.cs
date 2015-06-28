@@ -16,24 +16,33 @@ namespace PatreonScrubber
 
         public void Scrub()
         {
-            //Project t_Proj = new Project();
-
-            //t_Proj.ScrubProject("https://www.patreon.com/FutureFragments");
 
             m_Projects.Add(new Project("https://www.patreon.com/LewdWarfare"));
 
-            /*m_Projects.Add(new Project("https://www.patreon.com/TheTenk"));
-            m_Projects.Add(new Project("https://www.patreon.com/shindol"));
-            m_Projects.Add(new Project("https://www.patreon.com/bamuth"));
-            m_Projects.Add(new Project("https://www.patreon.com/Robaato"));
-            m_Projects.Add(new Project("https://www.patreon.com/tsuaii"));
-            m_Projects.Add(new Project("https://www.patreon.com/Raichiyo"));*/
 
             //ToXML("Data_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".xml");
 
             ToGraph("GraphData_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".dot");
 
             
+        }
+
+        public void ScrubFile(string Filename)
+        {
+            using (var t_Reader = new StreamReader(Filename))
+            {
+                string t_Line = "";
+                while ((t_Line = t_Reader.ReadLine()) != null)
+                {
+                    m_Projects.Add(new Project(t_Line));
+                }
+            }
+
+            if (m_Projects.Count > 0)
+            {
+                ToXML("Data_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".xml");
+                ToGraph("GraphData_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".dot");
+            }
         }
 
         public void ToXML(string FilePath)

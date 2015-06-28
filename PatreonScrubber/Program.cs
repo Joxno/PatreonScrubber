@@ -11,7 +11,12 @@ namespace PatreonScrubber
         static void Main(string[] args)
         {
             Scubber t_Scrub = new Scubber();
-            t_Scrub.Scrub();
+
+            if (args.Count() > 0)
+            {
+                t_Scrub.ScrubFile(args[0]);
+            }
+            
         }
     }
 }
